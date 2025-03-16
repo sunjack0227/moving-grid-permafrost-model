@@ -61,7 +61,7 @@ F=[1:4];
      yicunzai=[];
    kj=1:length(Y);ki=1:length(X);
      kij=parKij(1,ki,kj);
-  for  k = 1:length( kij)
+  parfor  k = 1:length( kij)
     [i,j]=parKij(2,kij,k);
 
     T1=D1(j,i);f=fD(j,i);
